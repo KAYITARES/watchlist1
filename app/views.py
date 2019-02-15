@@ -31,7 +31,8 @@ def movie(movie_id):
     '''
     movie =get_movie(movie_id)
     title = f'{movie.title}'
-    return render_template('movie.html',movie = movie_id)   
+    return render_template('movie.html',movie = movie)  
+
 @app.route('/search/<movie_name>')
 def search(movie_name):
     '''
